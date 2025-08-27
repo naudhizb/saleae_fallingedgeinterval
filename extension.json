@@ -1,0 +1,19 @@
+{
+  "version": "0.3.0",
+  "apiVersion": "1.0.0",
+  "author": "Minje Lee",
+  "name": "Falling Edge Interval Stats",
+  "extensions": {
+    "FallToFallStats": {
+      "type": "DigitalMeasurement",
+      "entryPoint": "FallingEdgeIntervals.FallToFallMeasurer",
+      "metrics": {
+        "fallMin":   { "name": "Fall_min",    "notation": "Fall<sub>min</sub>",    "units": "s" },
+        "fallMax":   { "name": "Fall_max",    "notation": "Fall<sub>max</sub>",    "units": "s" },
+        "fallAvg":   { "name": "Fall_avg",    "notation": "Fall<sub>avg</sub>",    "units": "s" },
+        "fallStd":   { "name": "Fall_stdev",  "notation": "Fall<sub>stdev</sub>",  "units": "s" },
+        "fallCount": { "name": "N_falling",   "notation": "N<sub>falling</sub>",   "units": ""  }
+      }
+    }
+  }
+}
